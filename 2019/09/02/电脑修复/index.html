@@ -4,14 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Summary One, Jackloner&#39;s Blog">
-    <meta name="description" content=" 低效的原因
-
-没有明确目标，导致行动盲目，从而浪费时间 指定小目标和大目标
-没有压力，导致懈怠 找到压力 😦
-达到注意力极限，没有及时调整番茄工作法
-使用错误的素材，导致迷糊只看经典，只看经典，其他一律不看
-外界干扰，导致情绪分散，精力">
+    <meta name="keywords" content="电脑修复, Jackloner&#39;s Blog">
+    <meta name="description" content="開始菜單裡的系統管理工具不見了[1]
+Dism /Online /Cleanup-Image /CheckHealth
+Dism /Online /Cleanup-Image /ScanHealth
+Dism /Online /Cleanu">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Summary One | Jackloner&#39;s Blog</title>
+    <title>电脑修复 | Jackloner&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -266,13 +263,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Summary One
+                        电脑修复
                     </div>
                 </div>
             </div>
@@ -383,8 +380,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/summary/" target="_blank">
-                                <span class="chip bg-color">summary</span>
+                            <a href="/tags/电脑使用技巧/" target="_blank">
+                                <span class="chip bg-color">电脑使用技巧</span>
                             </a>
                         
                     </div>
@@ -398,7 +395,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-07-08
+                    2019-09-02
                 </div>
 
                 
@@ -414,32 +411,29 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="低效的原因"><a class="markdownIt-Anchor" href="#低效的原因"></a> 低效的原因</h1>
+                <p><strong>開始菜單裡的系統管理工具不見了</strong><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup><br>
+Dism /Online /Cleanup-Image /CheckHealth</p>
+<p>Dism /Online /Cleanup-Image /ScanHealth</p>
+<p>Dism /Online /Cleanup-Image /RestoreHealth</p>
+<p>sfc /scannow</p>
 <ol>
-<li>没有明确目标，导致行动盲目，从而浪费时间 <mark>指定小目标和大目标</mark></li>
-<li>没有压力，导致懈怠 <mark>找到压力</mark> 😦</li>
-<li>达到注意力极限，没有及时调整<mark>番茄工作法</mark></li>
-<li>使用错误的素材，导致迷糊<mark>只看经典，只看经典，其他一律不看</mark></li>
-<li>外界干扰，导致情绪分散，精力不集中<mark>把阻力变动力，把绊脚石变垫脚石</mark></li>
-<li>一段时间只做一件事<mark>专注</mark></li>
-</ol>
-<hr>
-<h1 id="方法论"><a class="markdownIt-Anchor" href="#方法论"></a> 方法论</h1>
-<ol>
-<li>作者或者老师也是可能存在<mark>错误</mark>，所以，带着<mark>批判思维</mark> <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup><sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup><sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></li>
-<li>具有弹性，不是顺序执行，而是<mark>灵活</mark>处理</li>
-<li>抓<mark>重点</mark>，忽视细枝末节的东西，<mark><strong>时间宝贵</strong></mark></li>
-<li>进行阶段性 <mark><strong>反馈</strong></mark>，看是否达到目标，达到阶段目标，马上调整计划</li>
-<li>日结，周洁，月结，年结。</li>
+<li>
+<p>右擊Win圖示，選擇命令提示字元(系統管理員)身分執行</p>
+</li>
+<li>
+<p>於命令提示字元中，輸入指令 sfc /scannow，按下Enter</p>
+</li>
+<li>
+<p>掃描後，確認是否有跳出檔案毀損之類的訊息。</p>
+</li>
+<li>
+<p>掃描後請重新啟動電腦測試能否正常使用</p>
+</li>
 </ol>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p><a href="https://book.douban.com/subject/1013208/" target="_blank" rel="noopener">如何阅读一本书</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p><a href="https://book.douban.com/subject/26686251/" target="_blank" rel="noopener">这才是心理学</a> <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn3" class="footnote-item"><p><a href="https://book.douban.com/subject/2060491/" target="_blank" rel="noopener">逻辑学导论</a> <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+<li id="fn1" class="footnote-item"><p><a href="https://answers.microsoft.com/zh-hant/windows/forum/windows_7-files/%E9%96%8B%E5%A7%8B%E8%8F%9C%E5%96%AE%E8%A3%A1/a8cc5f8c-01f8-470a-8105-8f347976a7b4" target="_blank" rel="noopener">引用网址</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>
@@ -601,9 +595,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Summary One》
+                    《电脑修复》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/07/08/summary/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/09/02/电脑修复/" property="cc:attributionName"
                rel="cc:attributionURL">
                 jackloner
             </a> 采用
@@ -643,9 +637,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/09/02/电脑修复/">
                     <div class="card-image">
@@ -666,9 +661,9 @@ Dism /Online /Cleanu
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -677,6 +672,7 @@ Dism /Online /Cleanu
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -695,34 +691,30 @@ Dism /Online /Cleanu
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/05/learn-1/">
+                <a href="/2019/07/08/summary/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="how to read paper correctly">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Summary One">
                         
-                        <span class="card-title">how to read paper correctly</span>
+                        <span class="card-title">Summary One</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                             Learning from paper
+                             低效的原因
 
- paper by zhang
- seek for key logic inside paper
-
-introduction
-abstract
-result
-conclusion
-figure
-d
+没有明确目标，导致行动盲目，从而浪费时间 指定小目标和大目标
+没有压力，导致懈怠 找到压力 😦
+达到注意力极限，没有及时调整番茄工作法
+使用错误的素材，导致迷糊只看经典，只看经典，其他一律不看
+外界干扰，导致情绪分散，精力
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-05
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-08
                             </span>
                         <span class="publish-author">
                             
@@ -735,8 +727,8 @@ d
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/learn-record/" target="_blank">
-                        <span class="chip bg-color">learn-record</span>
+                    <a href="/tags/summary/" target="_blank">
+                        <span class="chip bg-color">summary</span>
                     </a>
                     
                 </div>
