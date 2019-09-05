@@ -218,7 +218,7 @@ header .brand-logo .logo-img {
 }
 
 header .brand-logo .logo-span {
-    font-size: 1rem;
+    font-size: 2.5rem;
 }
 
 header .button-collapse i {
@@ -385,7 +385,9 @@ header .go-back i {
     z-index: 2;
 }
 
-.bg-cover .title {
+.bg-cover 
+
+{
     font-size: 4rem;
     font-weight: 700;
     line-height: 1.85em;
