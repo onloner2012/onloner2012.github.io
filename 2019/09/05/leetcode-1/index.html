@@ -4,11 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="电脑修复, Jackloner&#39;s Blog">
-    <meta name="description" content="開始菜單裡的系統管理工具不見了[1]
-Dism /Online /Cleanup-Image /CheckHealth
-Dism /Online /Cleanup-Image /ScanHealth
-Dism /Online /Cleanu">
+    <meta name="keywords" content="twoSum, Jackloner&#39;s Blog">
+    <meta name="description" content=" leetcode-twoSum
+123456789101112131415161718192021222324var twoSum = function(nums, target) &amp;#123;	    let map = new Map">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +14,7 @@ Dism /Online /Cleanu">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>电脑修复 | Jackloner&#39;s Blog</title>
+    <title>twoSum | Jackloner&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -263,13 +261,13 @@ Dism /Online /Cleanu">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        电脑修复
+                        twoSum
                     </div>
                 </div>
             </div>
@@ -380,8 +378,8 @@ Dism /Online /Cleanu">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/电脑使用技巧/" target="_blank">
-                                <span class="chip bg-color">电脑使用技巧</span>
+                            <a href="/tags/leetcode/" target="_blank">
+                                <span class="chip bg-color">leetcode</span>
                             </a>
                         
                     </div>
@@ -395,7 +393,7 @@ Dism /Online /Cleanu">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-09-02
+                    2019-09-05
                 </div>
 
                 
@@ -411,32 +409,12 @@ Dism /Online /Cleanu">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>開始菜單裡的系統管理工具不見了</strong><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup><br>
-Dism /Online /Cleanup-Image /CheckHealth</p>
-<p>Dism /Online /Cleanup-Image /ScanHealth</p>
-<p>Dism /Online /Cleanup-Image /RestoreHealth</p>
-<p>sfc /scannow</p>
-<ol>
-<li>
-<p>右擊Win圖示，選擇命令提示字元(系統管理員)身分執行</p>
-</li>
-<li>
-<p>於命令提示字元中，輸入指令 sfc /scannow，按下Enter</p>
-</li>
-<li>
-<p>掃描後，確認是否有跳出檔案毀損之類的訊息。</p>
-</li>
-<li>
-<p>掃描後請重新啟動電腦測試能否正常使用</p>
-</li>
-</ol>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p><a href="https://answers.microsoft.com/zh-hant/windows/forum/windows_7-files/%E9%96%8B%E5%A7%8B%E8%8F%9C%E5%96%AE%E8%A3%A1/a8cc5f8c-01f8-470a-8105-8f347976a7b4" target="_blank" rel="noopener">引用网址</a> <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
+                <h1 id="leetcode-twosum"><a class="markdownIt-Anchor" href="#leetcode-twosum"></a> leetcode-twoSum</h1>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line">	    <span class="keyword">let</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>();</span><br><span class="line">	    <span class="keyword">let</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>()</span><br><span class="line">	    <span class="keyword">for</span>(<span class="keyword">let</span> i <span class="keyword">in</span> nums)&#123;</span><br><span class="line">	        map.set(</span><br><span class="line">	            nums[i],</span><br><span class="line">	            i</span><br><span class="line">	        )</span><br><span class="line">            <span class="comment">// 调用Map() =&gt; [values,key]</span></span><br><span class="line">	    &#125;</span><br><span class="line">	    </span><br><span class="line">	    <span class="keyword">for</span>(<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; nums.length - <span class="number">1</span>; j++)&#123;</span><br><span class="line">	        <span class="keyword">if</span>(map.has( target - nums[j] ) &amp;&amp; map.get( target - nums[j]) != j )</span><br><span class="line">            <span class="comment">// 如果Map中存在has(存在,有)的target的差和target的差的index不等于nums[j]的index</span></span><br><span class="line">            <span class="comment">// map中如果出现相同的key的,key不变,values(nums的index)替换原来的values(nums的index)</span></span><br><span class="line">            <span class="comment">// 若(target - nums[j])的key即在nums中的index不等于nums[j]的j,说明target - nums[j] = nums[j]即target - nums[j]存在</span></span><br><span class="line">            </span><br><span class="line">            &#123;</span><br><span class="line">	            arr.push( j , map.get( target - nums[j] ) );</span><br><span class="line">	            <span class="keyword">return</span> arr</span><br><span class="line">	        &#125;</span><br><span class="line">	    &#125;</span><br><span class="line">    </span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<p><mark>Waring:</mark><br>
+1,若target-nums[i] = nums[j],arr[1]为String。<br>
+2,leetcode test pass 😦<br>
+3,<a href="https://leetcode-cn.com/problems/two-sum/solution/javascriptliang-shu-zhi-he-cong-gui-su-dao-zui-su-/" target="_blank" rel="noopener">出处</a></p>
 
             </div>
             <hr/>
@@ -595,9 +573,9 @@ Dism /Online /Cleanup-Image /CheckHealth</p>
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《电脑修复》
+                    《twoSum》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/09/02/电脑修复/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/09/05/leetcode-1/" property="cc:attributionName"
                rel="cc:attributionURL">
                 jackloner
             </a> 采用
@@ -637,9 +615,10 @@ Dism /Online /Cleanup-Image /CheckHealth</p>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/09/05/leetcode-1/">
                     <div class="card-image">
@@ -658,9 +637,9 @@ Dism /Online /Cleanup-Image /CheckHealth</p>
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -669,6 +648,7 @@ Dism /Online /Cleanup-Image /CheckHealth</p>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -687,30 +667,27 @@ Dism /Online /Cleanup-Image /CheckHealth</p>
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/07/08/summary/">
+                <a href="/2019/09/02/电脑修复/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Summary One">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="电脑修复">
                         
-                        <span class="card-title">Summary One</span>
+                        <span class="card-title">电脑修复</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                             低效的原因
-
-没有明确目标，导致行动盲目，从而浪费时间 指定小目标和大目标
-没有压力，导致懈怠 找到压力 😦
-达到注意力极限，没有及时调整番茄工作法
-使用错误的素材，导致迷糊只看经典，只看经典，其他一律不看
-外界干扰，导致情绪分散，精力
+                            開始菜單裡的系統管理工具不見了[1]
+Dism /Online /Cleanup-Image /CheckHealth
+Dism /Online /Cleanup-Image /ScanHealth
+Dism /Online /Cleanu
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-07-08
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-09-02
                             </span>
                         <span class="publish-author">
                             
@@ -723,8 +700,8 @@ Dism /Online /Cleanup-Image /CheckHealth</p>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/summary/" target="_blank">
-                        <span class="chip bg-color">summary</span>
+                    <a href="/tags/电脑使用技巧/" target="_blank">
+                        <span class="chip bg-color">电脑使用技巧</span>
                     </a>
                     
                 </div>
