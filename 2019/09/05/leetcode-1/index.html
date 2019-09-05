@@ -414,29 +414,29 @@ ma">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="leetcode-twosum"><a class="markdownIt-Anchor" href="#leetcode-twosum"></a> leetcode-twoSum</h1>
-<pre class="highlight"><code class="js"><span class="hljs-keyword">var</span> twoSum = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nums, target</span>) </span>{
-<span class="hljs-keyword">let</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
-<span class="hljs-keyword">let</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>()
-<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i <span class="hljs-keyword">in</span> nums){
-map.set(
-nums[i],
+<pre class="js"><code class="js"><span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">let</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Map</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token keyword">in</span> nums<span class="token punctuation">)</span><span class="token punctuation">{</span>
+map<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>
+nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>
 i
-)
-<span class="hljs-comment">// 调用Map() =&gt; [values,key]</span>
-}
+<span class="token punctuation">)</span>
+<span class="token comment">// 调用Map() => [values,key]</span>
+<span class="token punctuation">}</span>
 
-<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &lt; nums.length - <span class="hljs-number">1</span>; j++){
-<span class="hljs-keyword">if</span>(map.has( target - nums[j] ) &amp;&amp; map.get( target - nums[j]) != j )
-        <span class="hljs-comment">// 如果Map中存在has(存在,有)的target的差和target的差的index不等于nums[j]的index</span>
-        <span class="hljs-comment">// map中如果出现相同的key的,key不变,values(nums的index)替换原来的values(nums的index)</span>
-        <span class="hljs-comment">// 若(target - nums[j])的key即在nums中的index不等于nums[j]的j</span>
-        <span class="hljs-comment">// 说明target - nums[j] = nums[j]即target - nums[j]存在</span>
-{
-arr.push( j , map.get( target - nums[j] ) );
-<span class="hljs-keyword">return</span> arr
-}
-}
-}
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>map<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span> target <span class="token operator">-</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span> target <span class="token operator">-</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">!=</span> j <span class="token punctuation">)</span>
+        <span class="token comment">// 如果Map中存在has(存在,有)的target的差和target的差的index不等于nums[j]的index</span>
+        <span class="token comment">// map中如果出现相同的key的,key不变,values(nums的index)替换原来的values(nums的index)</span>
+        <span class="token comment">// 若(target - nums[j])的key即在nums中的index不等于nums[j]的j</span>
+        <span class="token comment">// 说明target - nums[j] = nums[j]即target - nums[j]存在</span>
+<span class="token punctuation">{</span>
+arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span> j <span class="token punctuation">,</span> map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span> target <span class="token operator">-</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">return</span> arr
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
 <p><mark>Waring:</mark><br>
 1,若target-nums[i] = nums[j],arr[1]为String。<br>
