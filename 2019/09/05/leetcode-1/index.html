@@ -6,11 +6,7 @@
     <meta charset="utf-8">
     <meta name="keywords" content="twoSum, Jackloner&#39;s Blog">
     <meta name="description" content=" leetcode-twoSum
-var twoSum = function(nums, target) {
-let map = new Map();
-let arr = new Array()
-for(let i in nums){
-ma">
+1234567891011121314151617181920212223var twoSum = function(nums, target) &amp;#123;let map = new Map();let ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -414,35 +410,11 @@ ma">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="leetcode-twosum"><a class="markdownIt-Anchor" href="#leetcode-twosum"></a> leetcode-twoSum</h1>
-<pre class="highligh"><code class="js"><span class="hljs-keyword">var</span> twoSum = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">nums, target</span>) </span>{
-<span class="hljs-keyword">let</span> map = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
-<span class="hljs-keyword">let</span> arr = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>()
-<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i <span class="hljs-keyword">in</span> nums){
-map.set(
-nums[i],
-i
-)
-<span class="hljs-comment">// 调用Map() =&gt; [values,key]</span>
-}
-
-<span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j = <span class="hljs-number">0</span>; j &lt; nums.length - <span class="hljs-number">1</span>; j++){
-<span class="hljs-keyword">if</span>(map.has( target - nums[j] ) &amp;&amp; map.get( target - nums[j]) != j )
-        <span class="hljs-comment">// 如果Map中存在has(存在,有)的target的差和target的差的index不等于nums[j]的index</span>
-        <span class="hljs-comment">// map中如果出现相同的key的,key不变,values(nums的index)替换原来的values(nums的index)</span>
-        <span class="hljs-comment">// 若(target - nums[j])的key即在nums中的index不等于nums[j]的j</span>
-        <span class="hljs-comment">// 说明target - nums[j] = nums[j]即target - nums[j]存在</span>
-{
-arr.push( j , map.get( target - nums[j] ) );
-<span class="hljs-keyword">return</span> arr
-}
-}
-}
-
-==Waring:==
-<span class="hljs-number">1</span>,若target-nums[i] = nums[j],arr[<span class="hljs-number">1</span>]为<span class="hljs-built_in">String</span>。
-<span class="hljs-number">2</span>,leetcode test pass :-(
-<span class="hljs-number">3</span>,[出处](https:<span class="hljs-comment">//leetcode-cn.com/problems/two-sum/solution/javascriptliang-shu-zhi-he-cong-gui-su-dao-zui-su-/)</span>
-</code></pre>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> twoSum = <span class="function"><span class="keyword">function</span>(<span class="params">nums, target</span>) </span>&#123;</span><br><span class="line"><span class="keyword">let</span> map = <span class="keyword">new</span> <span class="built_in">Map</span>();</span><br><span class="line"><span class="keyword">let</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>()</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i <span class="keyword">in</span> nums)&#123;</span><br><span class="line">map.set(</span><br><span class="line">nums[i],</span><br><span class="line">i</span><br><span class="line">)</span><br><span class="line"><span class="comment">// 调用Map() =&gt; [values,key]</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> j = <span class="number">0</span>; j &lt; nums.length - <span class="number">1</span>; j++)&#123;</span><br><span class="line"><span class="keyword">if</span>(map.has( target - nums[j] ) &amp;&amp; map.get( target - nums[j]) != j )</span><br><span class="line">        <span class="comment">// 如果Map中存在has(存在,有)的target的差和target的差的index不等于nums[j]的index</span></span><br><span class="line">        <span class="comment">// map中如果出现相同的key的,key不变,values(nums的index)替换原来的values(nums的index)</span></span><br><span class="line">        <span class="comment">// 若(target - nums[j])的key即在nums中的index不等于nums[j]的j</span></span><br><span class="line">        <span class="comment">// 说明target - nums[j] = nums[j]即target - nums[j]存在</span></span><br><span class="line">&#123;</span><br><span class="line">arr.push( j , map.get( target - nums[j] ) );</span><br><span class="line"><span class="keyword">return</span> arr</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><mark>Waring:</mark><br>
+1,若target-nums[i] = nums[j],arr[1]为String。<br>
+2,leetcode test pass 😦<br>
+3,<a href="https://leetcode-cn.com/problems/two-sum/solution/javascriptliang-shu-zhi-he-cong-gui-su-dao-zui-su-/" target="_blank" rel="noopener">出处</a></p>
 
             </div>
             <hr/>
@@ -661,11 +633,7 @@ arr.push( j , map.get( target - nums[j] ) );
                     <div class="summary block-with-text">
                         
                              leetcode-twoSum
-var twoSum = function(nums, target) {
-let map = new Map();
-let arr = new Array()
-for(let i in nums){
-ma
+1234567891011121314151617181920212223var twoSum = function(nums, target) &#123;let map = new Map();let 
                         
                     </div>
                     <div class="publish-info">
